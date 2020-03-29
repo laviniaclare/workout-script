@@ -35,9 +35,9 @@ EXERCISES = [
 	'40 High Knees',
 	'50 Calf Raises',
 	'50 Jumping Jacks',
-	'10 Bridges',
-	'20 Bridges',
-	'30 Bridges',
+	'10 Short Bridges',
+	'20 Short Bridges',
+	'30 Short Bridges',
 	'20 Side Lunges',
 	'10 Side Lunges',
 	'20 Butterfly Sit-ups',
@@ -56,11 +56,48 @@ EXERCISES = [
 	'30 Firehose Leg Raises (15 per side)',
 ]
 
-num_exercises = input("How many different moves do you want to do?\n")
+RESISTENCE_BAND = [
+	'10 Side leg raises with resistence band',
+	'10 Bent knee leg raises with resistence band',
+	'10 Butterfly side leg raises with resistence band',
+	'20 Side leg raises with resistence band',
+	'20 Bent knee leg raises with resistence band',
+	'20 Butterfly side leg raises with resistence band',
+	'10 Short Bridges with resistence band',
+	'20 Short Bridges with resistence band',
+	'30 Short Bridges with resistence band',
+	'20 Tricep Pulls',
+	'30 Tricep Pulls',
+	'20 Reverse Grip Single-Arm Curl and Row',
+	'30 Reverse Grip Single-Arm Curl and Row',
+	'20 Side Lateral Arm Raise',
+	'30 Side Lateral Arm Raise',
+	'20 Triceps Presses/extensions',
+	'30 Triceps Presses/extensions',
+	'20 Lat Pull-Downs',
+	'30 Lat Pull-Down',
+	'20 Horizontal Arm Extensions',
+	'30 Horizontal Arm Extensions',
+	'20 Rear Arm Extensions',
+	'30 Rear Arm Extensions',
+	'20 Standing Hip Abductions',
+	'30 Standing Hip Abductions',
+	'20 Squatting Side Steps',
+	'30 Squatting Side Steps',
+	'30 V Rows',
+	'20 V Rows',
+]
+
+num_exercises = input('How many different moves do you want to do?\n')
+include_band = str(input('Do you want to include mini band exercises? If yes, answer True\n'))
+if include_band:
+	exercises = EXERCISES + RESISTENCE_BAND
+else:
+	exercises = EXERCISES
 print('Your assignment is:\n')
 for i in range(num_exercises):
-	move_index = random.randint(0, len(EXERCISES)-1)
-	move = EXERCISES[move_index]
+	move_index = random.randint(0, len(exercises)-1)
+	move = exercises[move_index]
 	print(' - '+move)
 
-print("\nGood luck!")
+print('\nGood luck!')
