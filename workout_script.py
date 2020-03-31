@@ -42,8 +42,8 @@ EXERCISES = [
 	'20 Short Bridges kick up',
 	'30 Second Short Bridge Hold',
 	'30 Square Bridge Hold',
-	'1 Minute Short Bridge Hold'.
-	'1 Minute Square Bridge Hold'
+	'1 Minute Short Bridge Hold',
+	'1 Minute Square Bridge Hold',
 	'20 Side Lunges',
 	'10 Side Lunges',
 	'20 Butterfly Sit-ups',
@@ -67,7 +67,7 @@ EXERCISES = [
 	'40 Knee to Elbow Bicycles',
 	'20 Standing Hip Abductions',
 	'30 Standing Hip Abductions',
-	'30 Flutter Kicks'.
+	'30 Flutter Kicks',
 	'10 Superman',
 	'20 Superman',
 	'30 Second Superman Hold',
