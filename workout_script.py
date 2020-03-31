@@ -124,7 +124,7 @@ if include_band:
 else:
 	exercises = EXERCISES
 print('Your assignment is:\n')
-for i in range(num_exercises):
+for _ in range(num_exercises):
 	move_index = random.randint(0, len(exercises)-1)
 	move = exercises[move_index]
 	print(' - '+move)
