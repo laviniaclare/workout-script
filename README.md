@@ -1,4 +1,4 @@
-I just made this for me, but I might add instructions for how to do each exercise eventually
+I just made this for me so it's not very polished
 
 Inspired by this:
 
