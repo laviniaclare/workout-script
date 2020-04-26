@@ -93,6 +93,14 @@ EXERCISES = [
 	'80 High Knees',
 	'80 Jumping Jacks',
  ]
+
+BLOCKS = [
+	'30 Second Straddle Hold',
+	'30 Second Butterfly Hold',
+	'10 Butterfly Pelvic Tilt',
+	'10 Straddle Pelvic Tilt',
+]
+
 RESISTENCE_BAND = [
 	'10 Side leg raises with resistence band',
 	'10 Bent knee leg raises with resistence band',
@@ -131,7 +139,6 @@ RESISTENCE_BAND = [
 	'40 Donkey Kicks w/ Mini Band',
 	'20 Resistence Band Kick Back',
 	'30 Resistence Band Kick Back',
-	'40 Resistence Band Kick Back',
 	'10 Resistence Band Deadlift',
 	'20 Resistence Band Deadlift',
 	'30 Resistence Band Deadlift',
@@ -142,10 +149,12 @@ RESISTENCE_BAND = [
 
 num_exercises = input('How many different moves do you want to do?\n')
 include_band = input('Include mini band exercises? True or False\n')
+include_blocks = input('Include block exercises?')
+exercises = EXERCISES
 if include_band:
-	exercises = EXERCISES + RESISTENCE_BAND
-else:
-	exercises = EXERCISES
+	exercises += RESISTENCE_BAND
+if include_blocks:
+	exercises += BLOCKS
 print('Your assignment is:\n')
 for _ in range(num_exercises):
 	move_index = random.randint(0, len(exercises)-1)
