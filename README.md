@@ -1,4 +1,4 @@
-I just made this for me so it's not very polished
+I just made this for me so it's not very polished. I might add instructions for how to do the moves someday
 
 Inspired by this:
 

@@ -7,6 +7,7 @@ EXERCISES = [
 	'1 Minute Squat Hold',
 	'1 minute plank',
 	'1 minute wall sit',
+	'2 Minute Squat Hold',
 	'10 Burpees',
 	'10 Calf Raises (toes pointed in)',
 	'10 Calf Raises (toes pointed out)',
@@ -17,8 +18,8 @@ EXERCISES = [
 	'10 Superman',
 	'100 Jumping Jacks',
 	'15 Burpees',
-	'15 Push-ups',
-	'15 Push-ups',
+	'15 Regular Push-ups',
+	'15 Hands pointed in Push-ups',
 	'15 Reverse Plank',
 	'15 Second Side Plank Per Side',
 	'16 Front Lunges',
@@ -92,13 +93,32 @@ EXERCISES = [
 	'60 High Knees',
 	'80 High Knees',
 	'80 Jumping Jacks',
+	'30 Second Swan Hold',
+	'1 Minute Swan Hold',
+	'10 Dive Through Push-ups',
+	'10 Regular Push-ups',
+	'20 Regular Push-ups',
+	'10 Diamond Push-ups',
+	'15 Dive Through Push-ups',
+	'10 Pre-Handstand Toe Lift',
+	'15 Pre-Handstand Toe Lift',
+	'10 Pre-Handstand Toe Lift, on elbows',
+	'15 Pre-Handstand Toe Lift, on elbows',
  ]
 
 BLOCKS = [
 	'30 Second Straddle Hold',
 	'30 Second Butterfly Hold',
+	'1 Minute Straddle Hold',
+	'1 Minute Butterfly Hold',
 	'10 Butterfly Pelvic Tilt',
 	'10 Straddle Pelvic Tilt',
+	'10 Parallette Dips',
+	'10 Parallette Push-ups',
+	'10 Parallette Dive Through Push-ups',
+	'10 Parallette Skullcrusher Push-ups',
+	'30 Second Parallette Tucked L-sit, toes touching',
+	'15 Parallette Tucked L-sit Single Leg Toe Taps',
 ]
 
 RESISTENCE_BAND = [
@@ -149,7 +169,7 @@ RESISTENCE_BAND = [
 
 num_exercises = input('How many different moves do you want to do?\n')
 include_band = input('Include mini band exercises? True or False\n')
-include_blocks = input('Include block exercises?')
+include_blocks = input('Include block exercises?\n')
 exercises = EXERCISES
 if include_band:
 	exercises += RESISTENCE_BAND
