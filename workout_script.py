@@ -1,17 +1,16 @@
 import random
 
 EXERCISES = [
-	'1 Minute Elbow Plank',
-	'1 Minute Short Bridge Hold',
-	'1 Minute Square Bridge Hold',
-	'1 Minute Squat Hold',
-	'1 minute plank',
-	'1 minute wall sit',
-	'2 Minute Squat Hold',
 	'10 Burpees',
 	'10 Calf Raises (toes pointed in)',
 	'10 Calf Raises (toes pointed out)',
 	'10 Calf Raises (toes straight)',
+	'15 Calf Raises (toes pointed in)',
+	'15 Calf Raises (toes pointed out)',
+	'15 Calf Raises (toes straight)',
+	'20 Calf Raises (toes pointed in)',
+	'20 Calf Raises (toes pointed out)',
+	'20 Calf Raises (toes straight)',
 	'10 Push-ups',
 	'10 Short Bridges',
 	'10 Side Lunges',
@@ -21,10 +20,8 @@ EXERCISES = [
 	'15 Regular Push-ups',
 	'15 Hands pointed in Push-ups',
 	'15 Reverse Plank',
-	'15 Second Side Plank Per Side',
 	'16 Front Lunges',
 	'16 Rear Lunges',
-	'2 minute wall sit',
 	'20 Back Lunges',
 	'20 Bent Knee Side Leg Raises',
 	'20 Burpees',
@@ -70,12 +67,6 @@ EXERCISES = [
 	'30 Leg Raises (laying on back)',
 	'30 Mountain Climbers',
 	'30 Russian Twists',
-	'30 Second Reverse Plank Hold',
-	'30 Second Short Bridge Hold',
-	'30 Second Side Plank Per Side',
-	'30 Second Square Bridge Hold',
-	'30 Second Squat Hold',
-	'30 Second Superman Hold',
 	'30 Short Bridges',
 	'30 Side leg raises',
 	'30 Squats',
@@ -93,8 +84,6 @@ EXERCISES = [
 	'60 High Knees',
 	'80 High Knees',
 	'80 Jumping Jacks',
-	'30 Second Swan Hold',
-	'1 Minute Swan Hold',
 	'10 Dive Through Push-ups',
 	'10 Regular Push-ups',
 	'20 Regular Push-ups',
@@ -107,17 +96,16 @@ EXERCISES = [
  ]
 
 BLOCKS = [
-	'30 Second Straddle Hold',
-	'30 Second Butterfly Hold',
-	'1 Minute Straddle Hold',
-	'1 Minute Butterfly Hold',
 	'10 Butterfly Pelvic Tilt',
 	'10 Straddle Pelvic Tilt',
+	'15 Butterfly Pelvic Tilt',
+	'15 Straddle Pelvic Tilt',
 	'10 Parallette Dips',
+	'5 Parallette Dips',
 	'10 Parallette Push-ups',
 	'10 Parallette Dive Through Push-ups',
+	'5 Parallette Dive Through Push-ups',
 	'10 Parallette Skullcrusher Push-ups',
-	'30 Second Parallette Tucked L-sit, toes touching',
 	'15 Parallette Tucked L-sit Single Leg Toe Taps',
 ]
 
@@ -157,8 +145,6 @@ RESISTENCE_BAND = [
 	'20 Donkey Kicks w/ Mini Band',
 	'30 Donkey Kicks w/ Mini Band',
 	'40 Donkey Kicks w/ Mini Band',
-	'20 Resistence Band Kick Back',
-	'30 Resistence Band Kick Back',
 	'10 Resistence Band Deadlift',
 	'20 Resistence Band Deadlift',
 	'30 Resistence Band Deadlift',
@@ -167,14 +153,42 @@ RESISTENCE_BAND = [
 	'30 Resistence Band Jump Squats',
 ]
 
+HOLDS = [
+	'1 Minute Elbow Plank',
+	'1 Minute Short Bridge Hold',
+	'1 Minute Square Bridge Hold',
+	'1 Minute Squat Hold',
+	'1 minute plank',
+	'1 minute wall sit',
+	'2 minute wall sit',
+	'2 Minute Squat Hold',
+	'30 Second Reverse Plank Hold',
+	'30 Second Short Bridge Hold',
+	'30 Second Side Plank Per Side',
+	'15 Second Side Plank Per Side',
+	'10 Second Side Plank Per Side',
+	'30 Second Square Bridge Hold',
+	'30 Second Superman Hold',
+	'30 Second Swan Hold',
+	'1 Minute Swan Hold',
+	'30 Second Straddle Hold',
+	'30 Second Butterfly Hold',
+	'1 Minute Straddle Hold',
+	'1 Minute Butterfly Hold',
+	'30 Second Parallette Tucked L-sit',
+]
+
 num_exercises = input('How many different moves do you want to do?\n')
 include_band = input('Include mini band exercises? True or False\n')
 include_blocks = input('Include block exercises?\n')
+include_holds = input('Include static hold exercises?\n')
 exercises = EXERCISES
 if include_band:
 	exercises += RESISTENCE_BAND
 if include_blocks:
 	exercises += BLOCKS
+if include_holds:
+	exercises += HOLDS
 print('Your assignment is:\n')
 for _ in range(num_exercises):
 	move_index = random.randint(0, len(exercises)-1)
