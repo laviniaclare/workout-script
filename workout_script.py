@@ -84,6 +84,7 @@ EXERCISES = [
 	'60 High Knees',
 	'80 High Knees',
 	'80 Jumping Jacks',
+	'5 Dive Through Push-ups',
 	'10 Dive Through Push-ups',
 	'10 Regular Push-ups',
 	'20 Regular Push-ups',
@@ -93,6 +94,9 @@ EXERCISES = [
 	'15 Pre-Handstand Toe Lift',
 	'10 Pre-Handstand Toe Lift, on elbows',
 	'15 Pre-Handstand Toe Lift, on elbows',
+	'20 Kneeling Extended Leg Raises',
+	'30 Kneeling Extended Leg Raises',
+	'10 Kneeling Extended Leg Raises',
  ]
 
 BLOCKS = [
@@ -101,11 +105,13 @@ BLOCKS = [
 	'15 Butterfly Pelvic Tilt',
 	'15 Straddle Pelvic Tilt',
 	'10 Parallette Dips',
-	'5 Parallette Dips',
+	'15 Parallette Dips',
+	'20 Parallette Dips',
 	'10 Parallette Push-ups',
 	'10 Parallette Dive Through Push-ups',
 	'5 Parallette Dive Through Push-ups',
 	'10 Parallette Skullcrusher Push-ups',
+	'15 Parallette Skullcrusher Push-ups',
 	'15 Parallette Tucked L-sit Single Leg Toe Taps',
 ]
 
