@@ -101,6 +101,11 @@ EXERCISES = [
 	'10 Swimmers',
 	'16 Swimmers',
 	'20 Swimmers',
+	'10 plank shoulder taps',
+	'12 planck shoulder taps',
+	'10 plank side-steps',
+	'6 plank side-steps',
+	'12 plank side-steps',
  ]
 
 BLOCKS = [
@@ -119,22 +124,22 @@ BLOCKS = [
 	'15 Parallette Tucked L-sit Single Leg Toe Taps',
 ]
 
-RESISTENCE_BAND = [
-	'10 Side leg raises with resistence band',
-	'10 Bent knee leg raises with resistence band',
-	'10 Butterfly side leg raises with resistence band',
-	'20 Side leg raises with resistence band',
-	'20 Bent knee leg raises with resistence band',
-	'20 Butterfly side leg raises with resistence band',
-	'10 Short Bridges with resistence band',
-	'20 Short Bridges with resistence band',
-	'30 Short Bridges with resistence band',
-	'20 Tricep Pulls',
-	'30 Tricep Pulls',
+MINI_BAND = [
+	'10 Side leg raises with Mini band',
+	'10 Bent knee leg raises with Mini band',
+	'10 Butterfly side leg raises with Mini band',
+	'20 Side leg raises with Mini band',
+	'20 Bent knee leg raises with Mini band',
+	'20 Butterfly side leg raises with Mini band',
+	'10 Short Bridges with mini band',
+	'20 Short Bridges with mini band',
+	'30 Short Bridges with mini band',
+	'20 Mini Band Tricep Rows',
+	'30 Mini Band Tricep Rows',
 	'20 Reverse Grip Single-Arm Curl and Row',
 	'30 Reverse Grip Single-Arm Curl and Row',
-	'20 Side Lateral Arm Raise',
-	'30 Side Lateral Arm Raise',
+	'20 Mini Band Side Lateral Arm Raise',
+	'30 Mini Band Side Lateral Arm Raise',
 	'20 Triceps Presses/extensions',
 	'30 Triceps Presses/extensions',
 	'20 Lat Pull-Downs',
@@ -143,10 +148,10 @@ RESISTENCE_BAND = [
 	'30 Horizontal Arm Extensions',
 	'20 Rear Arm Extensions',
 	'30 Rear Arm Extensions',
-	'20 Standing Hip Abductions (with resistence band)',
-	'30 Standing Hip Abductions (with resistence band)',
-	'20 Squatting Side Steps',
-	'30 Squatting Side Steps',
+	'20 Standing Hip Abductions (with Mini band)',
+	'30 Standing Hip Abductions (with Mini band)',
+	'20 Mini Band Squatting Side Steps',
+	'30 Mini Band Squatting Side Steps',
 	'10 V Rows',
 	'20 V Rows',
 	'30 V Rows',
@@ -154,18 +159,27 @@ RESISTENCE_BAND = [
 	'50 V Rows',
 	'30 Kneeling Curl',
 	'40 Kneeling Curl',
-	'20 Single Leg Donkey Kicks w/ Resistence Band',
-	'30 Single Leg Donkey Kicks w/ Resistence Band',
-	'40 Single Leg Donkey Kicks w/ Resistence Band',
-	'10 Resistence Band Deadlift',
-	'20 Resistence Band Deadlift',
-	'30 Resistence Band Deadlift',
-	'40 Resistence Band Deadlift',
-	'20 Resistence Band Jump Squats',
-	'30 Resistence Band Jump Squats',
-	'20 Kneeling Extended Leg Raises (w/ resistence)',
-	'30 Kneeling Extended Leg Raises (w/ resistence)',
-	'10 Kneeling Extended Leg Raises (w/ resistence)',
+	'20 Single Leg Donkey Kicks w/ Mini Band',
+	'30 Single Leg Donkey Kicks w/ Mini Band',
+	'40 Single Leg Donkey Kicks w/ Mini Band',
+	'10 Mini Band Deadlift',
+	'20 Mini Band Deadlift',
+	'30 Mini Band Deadlift',
+	'40 Mini Band Deadlift',
+	'20 Mini Band Jump Squats',
+	'30 Mini Band Jump Squats',
+	'20 Kneeling Extended Leg Raises (w/ Mini Band)',
+	'30 Kneeling Extended Leg Raises (w/ Mini Band)',
+	'10 Kneeling Extended Leg Raises (w/ Mini Band)',
+]
+
+RESISTENCE_BAND = [
+	'10 Bicep Curls',
+	'20 Bicep Curls',
+	'10 Reverse Grip Curls',
+	'20 Reverse Grip Curls',
+	'10 Extended Arm Wrist Flex',
+	'20 Extended Arm Wrist Flex',
 ]
 
 HOLDS = [
@@ -197,11 +211,14 @@ HOLDS = [
 ]
 
 num_exercises = input('How many different moves do you want to do?\n')
-include_band = input('Include mini band exercises? True or False\n')
+include_mini_band = input('Include mini band exercises? True or False\n')
+include_resistence_band = input('Include long resistence band exercises?\n')
 include_blocks = input('Include block exercises?\n')
 include_holds = input('Include static hold exercises?\n')
 exercises = EXERCISES
-if include_band:
+if include_mini_band:
+	exercises += MINI_BAND
+if include_resistence_band:
 	exercises += RESISTENCE_BAND
 if include_blocks:
 	exercises += BLOCKS
