@@ -106,6 +106,9 @@ EXERCISES = [
 	'10 plank side-steps',
 	'6 plank side-steps',
 	'12 plank side-steps',
+	'10 side laying hip adductions',
+	'20 side laying hip adductions',
+	'30 side laying hip adductions',
  ]
 
 BLOCKS = [
@@ -174,14 +177,45 @@ MINI_BAND = [
 ]
 
 RESISTENCE_BAND = [
-	'10 Bicep Curls',
-	'20 Bicep Curls',
-	'10 Reverse Grip Curls',
-	'20 Reverse Grip Curls',
-	'10 Extended Arm Wrist Flex',
-	'20 Extended Arm Wrist Flex',
+	'10 Resistence Band Standing Bicep Curls',
+	'20 Resistence Band Standing Bicep Curls',
+	'10 Resistence Band Reverse Grip Curls',
+	'20 Resistence Band Reverse Grip Curls',
+	'10 Resistence Band Extended Arm Wrist Flex',
+	'20 Resistence Band Extended Arm Wrist Flex',
+	'10 Tricep Pull Down (door)',
+	'20 Tricep Pull Down (door)',
+	'10 Resistence Band Overhead Tricep Pulls',
+	'20 Resistence Band Overhead Tricep Pulls',
+	'10 Standin Row (door)',
+	'30 Standing Row (door)',
+	'20 Standin Row (door)',
+	'10 Interior Arm Rotations (door)',
+	'20 Interior Arm Rotations (door)',
+	'10 Exterior Arm Rotations (door)',
+	'20 Exterior Arm Rotations (door)',
+	'10 Resistence Band Front Arm Raises',
+	'20 Resistence Band Front Arm Raises',
+	'10 Resistence Band Lateral Arm Raises',
+	'20 Resistence Band Lateral Arm Raises',
+	'10 Chest Fly (door)',
+	'20 Chest Fly (door)',
+	'10 Chest Presses (door)',
+	'20 Chest Presses (door)',
+	'10 Resistence Banc Diagonal Arm Crosses',
+	'20 Kneeling Crunches',
+	'10 Resistence Band Squats',
 ]
 
+RESITENCE_CIRCLE = [
+	'10 side laying hip adductions, w/circle',
+	'20 side laying hip adductions, w/circle',
+	'30 side laying hip adductions, w/circle',
+	'10 lower leg circles',
+	'20 lower leg circles',
+	'30 lower leg circles',
+]
+ 
 HOLDS = [
 	'1 Minute Elbow Plank',
 	'1 Minute Short Bridge Hold',
