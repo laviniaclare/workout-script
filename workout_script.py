@@ -102,7 +102,8 @@ EXERCISES = [
 	'16 Swimmers',
 	'20 Swimmers',
 	'10 plank shoulder taps',
-	'12 planck shoulder taps',
+	'15 plank shoulder taps',
+	'20 plank shoulder taps',
 	'10 plank side-steps',
 	'6 plank side-steps',
 	'12 plank side-steps',
@@ -244,10 +245,33 @@ HOLDS = [
 	'45 Second Wall Hand-Stand',
 ]
 
+OTHER_TOYS = [
+	'15 Balance Board Squats',
+	'30 Balance Board Squats',
+	'30 Second Balance Board Plank',
+	'1 Minute Balance Board Plank',
+	'5 Balance Board Push-ups',
+	'10 Balance Board Mountain Climbers',
+	'5 Ab Rolls',
+	'10 Ab Rolls',
+	'10 Yoga ball leg lifts',
+	'10 Yoga Ball Sit-up passes',
+	'5 Yoga ball overhead squats',
+	'10 side laying hip adductions, w/circle',
+	'20 side laying hip adductions, w/circle',
+	'30 side laying hip adductions, w/circle',
+	'10 lower leg circles',
+	'20 lower leg circles',
+	'30 lower leg circles',
+	'Pole shoulder mobility sequence',
+	'10 Balance Board Short Bridges',
+]
+
 num_exercises = input('How many different moves do you want to do?\n')
 include_mini_band = input('Include mini band exercises? True or False\n')
 include_resistence_band = input('Include long resistence band exercises?\n')
 include_blocks = input('Include block exercises?\n')
+include_other = input('include other toys?\n')
 include_holds = input('Include static hold exercises?\n')
 exercises = EXERCISES
 if include_mini_band:
@@ -258,6 +282,8 @@ if include_blocks:
 	exercises += BLOCKS
 if include_holds:
 	exercises += HOLDS
+if include_other:
+	exercises += OTHER_TOYS
 print('Your assignment is:\n')
 for _ in range(num_exercises):
 	move_index = random.randint(0, len(exercises)-1)
