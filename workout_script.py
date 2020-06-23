@@ -101,15 +101,21 @@ EXERCISES = [
 	'10 Swimmers',
 	'16 Swimmers',
 	'20 Swimmers',
-	'10 plank shoulder taps',
-	'15 plank shoulder taps',
 	'20 plank shoulder taps',
+	'25 plank shoulder taps',
+	'30 plank shoulder taps',
 	'10 plank side-steps',
 	'6 plank side-steps',
 	'12 plank side-steps',
 	'10 side laying hip adductions',
 	'20 side laying hip adductions',
 	'30 side laying hip adductions',
+	'10 Hooked thumb arm raises shoulder opener',
+	'15 Hooked thumb arm raises shoulder opener',
+	'20 Hooked thumb arm raises shoulder opener',
+	'15 Hollow Rocks',
+	'20 Hollow Rocks',
+	'10 Hollow Rocks'
  ]
 
 BLOCKS = [
@@ -205,7 +211,16 @@ RESISTENCE_BAND = [
 	'20 Chest Presses (door)',
 	'10 Resistence Banc Diagonal Arm Crosses',
 	'20 Kneeling Crunches',
-	'10 Resistence Band Squats',
+	'10 Resistence Band Squats (door)',
+	'20 Resistence Band Squats (door)',
+	'30 Resistence Band Squats (door)',
+	'10 Resistence Band Squats (standing on band)',
+	'20 Resistence Band Squats (standing on band)',
+	'30 Resistence Band Squats (standing on band)',
+	'20 Kneeling Kick backs',
+	'25 Kneeling Kick backs',
+	'20 Laying Single Leg Kicks',
+	'25 Laying Single Leg Kicks',
 ]
 
 RESITENCE_CIRCLE = [
@@ -226,7 +241,6 @@ HOLDS = [
 	'1 minute wall sit',
 	'2 minute wall sit',
 	'2 Minute Squat Hold',
-	'30 Second Reverse Plank Hold',
 	'30 Second Short Bridge Hold',
 	'30 Second Side Plank Per Side',
 	'15 Second Side Plank Per Side',
@@ -265,6 +279,14 @@ OTHER_TOYS = [
 	'30 lower leg circles',
 	'Pole shoulder mobility sequence',
 	'10 Balance Board Short Bridges',
+	'30 Second Elevated Plank',
+	'5 Foot elevated Push-ups',
+	'30 Second Elbow Pilates ball plank',
+	'10 Front Neck crunches',
+	'10 Front Neck crunches',
+	'10 pole shoulder presses',
+	'10 pole shoulder circles',
+	'10 pole shoulder raise and lower'
 ]
 
 num_exercises = input('How many different moves do you want to do?\n')
