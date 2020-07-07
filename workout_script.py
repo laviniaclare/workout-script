@@ -1,6 +1,8 @@
 import random
 
-EXERCISES = [
+BODY_WEIGHT = [
+	'10 Burpees',
+	'10 Burpees',
 	'10 Burpees',
 	'10 Calf Raises (toes pointed in)',
 	'10 Calf Raises (toes pointed out)',
@@ -68,6 +70,11 @@ EXERCISES = [
 	'30 Short Bridges',
 	'30 Side leg raises',
 	'30 Squats',
+	'20 Squats',
+	'10 Squats',
+	'30 Sumo Squats',
+	'20 Sumo Squats',
+	'10 Sumo Squats',
 	'30 Standing Hip Abductions',
 	'30 Tricep Dips',
 	'40 Butterfly Sit-ups',
@@ -115,7 +122,28 @@ EXERCISES = [
 	'20 Hooked thumb arm raises shoulder opener',
 	'15 Hollow Rocks',
 	'20 Hollow Rocks',
-	'10 Hollow Rocks'
+	'10 Hollow Rocks',
+	'20 Reverse Crunches',
+	'30 Reverse Crunches',
+	'10 Reverse Crunches',
+	'30 Mountain Skaters',
+	'20 Mountain Skaters',
+	'40 Mountain Skaters',
+	'30 Plank Hip Taps',
+	'40 Plank Hip Taps',
+	'20 Plank Hip Taps',
+	'3 Pike toe drags',
+	'5 Pike toe drags',
+	'7 Pike toe drags',
+	'6 kneel turn kick through',
+	'8 kneel turn kick through',
+	'10 kneel turn kick through',
+	'20 Arm Circles',
+	'30 Arm Circles',
+	'6 Elbow Plank Openers',
+	'8 Elbow Plank Openers',
+	'20 Candlestick shoot ups',
+	'30 Candlestick shoot ups',
  ]
 
 BLOCKS = [
@@ -132,6 +160,9 @@ BLOCKS = [
 	'10 Parallette Skullcrusher Push-ups',
 	'15 Parallette Skullcrusher Push-ups',
 	'15 Parallette Tucked L-sit Single Leg Toe Taps',
+	'10 Russian get up with block',
+	'6 Russian get up with block',
+	'8 Russian get up with block',
 ]
 
 MINI_BAND = [
@@ -221,6 +252,9 @@ RESISTENCE_BAND = [
 	'25 Kneeling Kick backs',
 	'20 Laying Single Leg Kicks',
 	'25 Laying Single Leg Kicks',
+	'20 Standing Shoulder Presses',
+	'30 Standing Shoulder Presses',
+	'25 Standing Shoulder Presses'
 ]
 
 RESITENCE_CIRCLE = [
@@ -239,6 +273,7 @@ HOLDS = [
 	'1 Minute Squat Hold',
 	'1 minute plank',
 	'1 minute wall sit',
+	'1.5 minute Wall Sit',
 	'2 minute wall sit',
 	'2 Minute Squat Hold',
 	'30 Second Short Bridge Hold',
@@ -257,6 +292,7 @@ HOLDS = [
 	'30 Second Wall Hand-Stand',
 	'15 Second Wall Hand-Stand',
 	'45 Second Wall Hand-Stand',
+	'1 Minute Wall Hand-Stand',
 ]
 
 OTHER_TOYS = [
@@ -268,6 +304,8 @@ OTHER_TOYS = [
 	'10 Balance Board Mountain Climbers',
 	'5 Ab Rolls',
 	'10 Ab Rolls',
+	'7 Ab Rolls',
+	'3 Ab Rolls',
 	'10 Yoga ball leg lifts',
 	'10 Yoga Ball Sit-up passes',
 	'5 Yoga ball overhead squats',
@@ -286,7 +324,50 @@ OTHER_TOYS = [
 	'10 Front Neck crunches',
 	'10 pole shoulder presses',
 	'10 pole shoulder circles',
-	'10 pole shoulder raise and lower'
+	'10 pole shoulder raise and lower',
+	'10 Step Ups',
+	'20 Step Ups',
+	'30 Step Ups',
+]
+
+KETTLEBELL = [
+	'10 RKBS',
+	'15 RKBS',
+	'20 RKBS',
+	'30 RKBS',
+	'40 RKBS'
+	'10 Russian get up w/ kettlebell',
+	'6 Russian get up w/ kettlebell',
+	'8 Russian get up w/ kettlebell',
+	'10 AKBS',
+	'15 AKBS',
+	'20 AKBS',
+	'10 Goblet Squats',
+	'20 Goblet Squats',
+	'15 Goblet Squats',
+	'10 Single-Arm KBS',
+	'20 Single-Arm KBS',
+	'10 KBHP',
+	'15 KBHP',
+	'20 KBHP',
+	'8 kettlebell around the worlds',
+	'10 kettlebell around the worlds',
+	'12 kettlebell around the worlds',
+	'10 kettlebell cleans',
+	'20 kettlebell cleans',
+	'22 kettlebell cleans',
+	'10 kettlebell clean & press',
+	'20 kettlebell clean & press',
+	'22 kettlebell clean & press',
+	'10 kettlebell snatch',
+	'20 kettlebell snatch',
+	'22 kettlebell snatch',
+	'10 kettlebell windmill',
+	'8 kettlebell windmill',
+	'12 kettlebell windmill',
+	'20 Knealing kettlebell row',
+	'30 Knealing kettlebell row',
+	'16 Knealing kettlebell row',
 ]
 
 num_exercises = input('How many different moves do you want to do?\n')
@@ -295,7 +376,7 @@ include_resistence_band = input('Include long resistence band exercises?\n')
 include_blocks = input('Include block exercises?\n')
 include_other = input('include other toys?\n')
 include_holds = input('Include static hold exercises?\n')
-exercises = EXERCISES
+exercises = BODY_WEIGHT
 if include_mini_band:
 	exercises += MINI_BAND
 if include_resistence_band:
@@ -307,6 +388,7 @@ if include_holds:
 if include_other:
 	exercises += OTHER_TOYS
 print('Your assignment is:\n')
+' - 5 Burpees'
 for _ in range(num_exercises):
 	move_index = random.randint(0, len(exercises)-1)
 	move = exercises[move_index]
