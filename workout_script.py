@@ -142,8 +142,15 @@ BODY_WEIGHT = [
 	'30 Arm Circles',
 	'6 Elbow Plank Openers',
 	'8 Elbow Plank Openers',
-	'20 Candlestick shoot ups',
-	'30 Candlestick shoot ups',
+	'10 Candlestick shoot ups',
+	'12 Candlestick shoot ups',
+	'5 Wall angel',
+	'3 Wall angel',
+	'6 Wall angel',
+	'10 Narrow Grip Push-ups',
+	'5 Floor angel',
+	'3 Floor angel',
+	'6 Floor angel',
  ]
 
 BLOCKS = [
@@ -155,6 +162,7 @@ BLOCKS = [
 	'15 Parallette Dips',
 	'20 Parallette Dips',
 	'10 Parallette Push-ups',
+	'10 Parallette Push-ups'
 	'10 Parallette Dive Through Push-ups',
 	'5 Parallette Dive Through Push-ups',
 	'10 Parallette Skullcrusher Push-ups',
@@ -223,6 +231,8 @@ RESISTENCE_BAND = [
 	'20 Resistence Band Extended Arm Wrist Flex',
 	'10 Tricep Pull Down (door)',
 	'20 Tricep Pull Down (door)',
+	'10 Tricep Push Down (door)',
+	'20 Tricep Push Down (door)',
 	'10 Resistence Band Overhead Tricep Pulls',
 	'20 Resistence Band Overhead Tricep Pulls',
 	'10 Standin Row (door)',
@@ -240,7 +250,6 @@ RESISTENCE_BAND = [
 	'20 Chest Fly (door)',
 	'10 Chest Presses (door)',
 	'20 Chest Presses (door)',
-	'10 Resistence Banc Diagonal Arm Crosses',
 	'20 Kneeling Crunches',
 	'10 Resistence Band Squats (door)',
 	'20 Resistence Band Squats (door)',
@@ -293,6 +302,8 @@ HOLDS = [
 	'15 Second Wall Hand-Stand',
 	'45 Second Wall Hand-Stand',
 	'1 Minute Wall Hand-Stand',
+	'30 second laying T-hold',
+	'30 second laying Y-hold',
 ]
 
 OTHER_TOYS = [
@@ -328,6 +339,11 @@ OTHER_TOYS = [
 	'10 Step Ups',
 	'20 Step Ups',
 	'30 Step Ups',
+	'10 circle thigh squeeze',
+	'20 circle thigh squeeze',
+	'30 circle thigh squeeze',
+	'10 Stool dips',
+	'20 Stool dips',
 ]
 
 KETTLEBELL = [
@@ -353,6 +369,9 @@ KETTLEBELL = [
 	'8 kettlebell around the worlds',
 	'10 kettlebell around the worlds',
 	'12 kettlebell around the worlds',
+	'8 kettlebell halos',
+	'10 kettlebell halos',
+	'12 kettlebell halos',
 	'10 kettlebell cleans',
 	'20 kettlebell cleans',
 	'22 kettlebell cleans',
@@ -368,6 +387,10 @@ KETTLEBELL = [
 	'20 Knealing kettlebell row',
 	'30 Knealing kettlebell row',
 	'16 Knealing kettlebell row',
+	'10 Kettlebell Deadlift',
+	'20 Kettlebell Deadlift',
+	'30 Kettlebell Deadlift',
+	'40 Kettlebell Deadlift',
 ]
 
 num_exercises = input('How many different moves do you want to do?\n')
@@ -375,6 +398,7 @@ include_mini_band = input('Include mini band exercises? True or False\n')
 include_resistence_band = input('Include long resistence band exercises?\n')
 include_blocks = input('Include block exercises?\n')
 include_other = input('include other toys?\n')
+include_kettlebells = input('include kettlebells?\n')
 include_holds = input('Include static hold exercises?\n')
 exercises = BODY_WEIGHT
 if include_mini_band:
@@ -383,12 +407,14 @@ if include_resistence_band:
 	exercises += RESISTENCE_BAND
 if include_blocks:
 	exercises += BLOCKS
-if include_holds:
-	exercises += HOLDS
 if include_other:
 	exercises += OTHER_TOYS
+if include_kettlebells:
+	exercises += KETTLEBELL
+if include_holds:
+	exercises += HOLDS
 print('Your assignment is:\n')
-' - 5 Burpees'
+print(' - 5 Burpees')
 for _ in range(num_exercises):
 	move_index = random.randint(0, len(exercises)-1)
 	move = exercises[move_index]
