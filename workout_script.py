@@ -43,7 +43,10 @@ BODY_WEIGHT = [
 	'20 Push-ups',
 	'20 Russion Twists',
 	'20 Short Bridges',
-	'20 Short Bridges Knees to chest',
+	'20 Short Bridge Marches',
+	'30 Short Bridge Marches',
+	'40 Short Bridge Marches',
+	'50 Short Bridge Marches',
 	'20 Short Bridges kick up',
 	'20 Side Lunges',
 	'20 Side leg raises',
@@ -152,6 +155,8 @@ BODY_WEIGHT = [
 	'5 Floor angel',
 	'3 Floor angel',
 	'6 Floor angel',
+	'10 Scapular Push-ups',
+	'15 Scapular Push-ups',
  ]
 
 BLOCKS = [
@@ -395,11 +400,9 @@ FLAG_TO_MOVES_MAP = {
 	'-kb': KETTLEBELL,
 }
 
-def generate_workout():
+def generate_workout(num_exercises):
 	"""
 	"""
-	num_exercises = input('How many different moves do you want to do?\n')
-
 	exercises = []
 	for flag in sys.argv[1:]:
 		exercises += FLAG_TO_MOVES_MAP[flag]
@@ -414,4 +417,5 @@ def generate_workout():
 	print('\nGood luck!')
 
 if __name__ == '__main__':
-	generate_workout()
+	num_exercises = input('How many different moves do you want to do?\n')
+	generate_workout(num_exercises)
