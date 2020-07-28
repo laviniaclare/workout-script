@@ -1,4 +1,5 @@
 import random
+import sys
 
 BODY_WEIGHT = [
 	'10 Burpees',
@@ -265,15 +266,6 @@ RESISTENCE_BAND = [
 	'30 Standing Shoulder Presses',
 	'25 Standing Shoulder Presses'
 ]
-
-RESITENCE_CIRCLE = [
-	'10 side laying hip adductions, w/circle',
-	'20 side laying hip adductions, w/circle',
-	'30 side laying hip adductions, w/circle',
-	'10 lower leg circles',
-	'20 lower leg circles',
-	'30 lower leg circles',
-]
  
 HOLDS = [
 	'1 Minute Elbow Plank',
@@ -393,31 +385,33 @@ KETTLEBELL = [
 	'40 Kettlebell Deadlift',
 ]
 
-num_exercises = input('How many different moves do you want to do?\n')
-include_mini_band = input('Include mini band exercises? True or False\n')
-include_resistence_band = input('Include long resistence band exercises?\n')
-include_blocks = input('Include block exercises?\n')
-include_other = input('include other toys?\n')
-include_kettlebells = input('include kettlebells?\n')
-include_holds = input('Include static hold exercises?\n')
-exercises = BODY_WEIGHT
-if include_mini_band:
-	exercises += MINI_BAND
-if include_resistence_band:
-	exercises += RESISTENCE_BAND
-if include_blocks:
-	exercises += BLOCKS
-if include_other:
-	exercises += OTHER_TOYS
-if include_kettlebells:
-	exercises += KETTLEBELL
-if include_holds:
-	exercises += HOLDS
-print('Your assignment is:\n')
-print(' - 5 Burpees')
-for _ in range(num_exercises):
-	move_index = random.randint(0, len(exercises)-1)
-	move = exercises[move_index]
-	print(' - '+move)
+FLAG_TO_MOVES_MAP = {
+	'-bw': BODY_WEIGHT,
+	'-bl': BLOCKS,
+	'-mb': MINI_BAND,
+	'-rb': RESISTENCE_BAND,
+	'-h': HOLDS,
+	'-o': OTHER_TOYS,
+	'-kb': KETTLEBELL,
+}
 
-print('\nGood luck!')
+def generate_workout():
+	"""
+	"""
+	num_exercises = input('How many different moves do you want to do?\n')
+
+	exercises = []
+	for flag in sys.argv[1:]:
+		exercises += FLAG_TO_MOVES_MAP[flag]
+
+	print('Your assignment is:\n')
+	print(' - 5 Burpees')
+	for _ in range(num_exercises):
+		move_index = random.randint(0, len(exercises)-1)
+		move = exercises[move_index]
+		print(' - '+move)
+
+	print('\nGood luck!')
+
+if __name__ == '__main__':
+	generate_workout()
