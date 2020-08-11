@@ -1,4 +1,4 @@
-I just made this for me so it's not very polished. I might add instructions for how to do the moves someday
+I just made this for me so it's not very polished. I might add instructions for how to do the moves someday. Many of them can be googled, but some are names I made up to describe the exercise in a way I could remember.
 
 Inspired by this:
 

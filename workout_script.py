@@ -267,9 +267,9 @@ RESISTENCE_BAND = [
 	'25 Kneeling Kick backs',
 	'20 Laying Single Leg Kicks',
 	'25 Laying Single Leg Kicks',
-	'20 Standing Shoulder Presses',
-	'30 Standing Shoulder Presses',
-	'25 Standing Shoulder Presses'
+	'20 Standing Shoulder Presses (w/Resistence band)',
+	'30 Standing Shoulder Presses (w/Resistence band)',
+	'25 Standing Shoulder Presses (w/Resistence band)'
 ]
  
 HOLDS = [
@@ -348,7 +348,7 @@ KETTLEBELL = [
 	'15 RKBS',
 	'20 RKBS',
 	'30 RKBS',
-	'40 RKBS'
+	'40 RKBS',
 	'10 Russian get up w/ kettlebell',
 	'6 Russian get up w/ kettlebell',
 	'8 Russian get up w/ kettlebell',
