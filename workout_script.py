@@ -27,7 +27,6 @@ BODY_WEIGHT = [
 	'20 Back Lunges',
 	'20 Bent Knee Side Leg Raises',
 	'20 Burpees',
-	'20 Butterfly Sit-ups',
 	'20 Butterfly side leg raises',
 	'20 Crunches',
 	'20 Single Leg Donkey Kicks',
@@ -41,7 +40,7 @@ BODY_WEIGHT = [
 	'20 Kneel-ups',
 	'20 Mountain Climbers',
 	'20 Push-ups',
-	'20 Russion Twists',
+	'20 Russian Twists',
 	'20 Short Bridges',
 	'20 Short Bridge Marches',
 	'30 Short Bridge Marches',
@@ -55,9 +54,7 @@ BODY_WEIGHT = [
 	'20 Tricep Dips',
 	'25 Burpees',
 	'30 Bent knee side leg raises',
-	'30 Butterfly Sit-ups',
 	'30 Butterfly side leg raises',
-	'30 Crunches',
 	'30 Single Leg Donkey Kicks',
 	'30 Firehose Leg Raises',
 	'30 Flutter Kicks',
@@ -81,7 +78,6 @@ BODY_WEIGHT = [
 	'10 Sumo Squats',
 	'30 Standing Hip Abductions',
 	'30 Tricep Dips',
-	'40 Butterfly Sit-ups',
 	'40 Single Leg Donkey Kicks',
 	'40 Good mornings',
 	'40 High Knees',
@@ -157,6 +153,15 @@ BODY_WEIGHT = [
 	'6 Floor angel',
 	'10 Scapular Push-ups',
 	'15 Scapular Push-ups',
+	'5 Face Pull and hold',
+	'6 Face Pull and hold',
+	'4 Face Pull and hold',
+	'5 Side laying hip lift',
+	'10 Side laying hip lift',
+	'15 Side laying hip lift',
+	'10 Lunge Extension',
+	'20 Lunge Extension',
+	'16 Lunge Extension',
  ]
 
 BLOCKS = [
@@ -226,6 +231,9 @@ MINI_BAND = [
 	'20 Kneeling Extended Leg Raises (w/ Mini Band)',
 	'30 Kneeling Extended Leg Raises (w/ Mini Band)',
 	'10 Kneeling Extended Leg Raises (w/ Mini Band)',
+	'10 Sitting Bended Knee rotations',
+	'20 Sitting Bended Knee rotations',
+	'30 Sitting Bended Knee rotations',
 ]
 
 RESISTENCE_BAND = [
@@ -269,7 +277,9 @@ RESISTENCE_BAND = [
 	'25 Laying Single Leg Kicks',
 	'20 Standing Shoulder Presses (w/Resistence band)',
 	'30 Standing Shoulder Presses (w/Resistence band)',
-	'25 Standing Shoulder Presses (w/Resistence band)'
+	'25 Standing Shoulder Presses (w/Resistence band)',
+	'10 Sledgehammer Swings',
+	'10 Side Plank Leg Lift',
 ]
  
 HOLDS = [
@@ -301,6 +311,10 @@ HOLDS = [
 	'1 Minute Wall Hand-Stand',
 	'30 second laying T-hold',
 	'30 second laying Y-hold',
+	'30 Second Rocket dog hold',
+	'15 Second Rocket dog hold',
+	'30 Second parallel squat hold',
+	'1 Minute parallel squat hold',
 ]
 
 OTHER_TOYS = [
@@ -330,6 +344,8 @@ OTHER_TOYS = [
 	'30 Second Elbow Pilates ball plank',
 	'10 Front Neck crunches',
 	'10 Front Neck crunches',
+	'15 Front Neck Crunches',
+	'20 Front Neck Crunches',
 	'10 pole shoulder presses',
 	'10 pole shoulder circles',
 	'10 pole shoulder raise and lower',
@@ -341,6 +357,9 @@ OTHER_TOYS = [
 	'30 circle thigh squeeze',
 	'10 Stool dips',
 	'20 Stool dips',
+	'10 Pole Upper Back twists',
+	'8 Pole Upper Back twists',
+	'6 Pole Upper Back twists',
 ]
 
 KETTLEBELL = [
